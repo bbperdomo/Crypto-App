@@ -16,16 +16,19 @@ import java.util.ArrayList;
 // in this class we are passing our array list
 // and our View Holder class which we have created.
 public class CurrencyRVAdapter extends RecyclerView.Adapter<CurrencyRVAdapter.CurrencyViewholder> {
+    //members
     private static DecimalFormat df2 = new DecimalFormat("#.##");
-    private ArrayList<CurrencyModal> currencyModals;
+    private ArrayList<CurrencyModal> currencyModals;    //holds listings, filtered arraylist
     private Context context;
 
+    //constructor method - creates instance of currencyRVadapter object when called
     public CurrencyRVAdapter(ArrayList<CurrencyModal> currencyModals, Context context) {
         this.currencyModals = currencyModals;
         this.context = context;
     }
 
     // below is the method to filter our list.
+    //filterllist is actually the filteredlist arraylist from the filter() method in our main activity.
     public void filterList(ArrayList<CurrencyModal> filterllist) {
         // adding filtered list to our
         // array list and notifying data set changed

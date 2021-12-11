@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     // adapter, array list, progress bar
     private RecyclerView currencyRV;
     private EditText searchEdt;
-    private ArrayList<CurrencyModal> currencyModalArrayList;
+    private ArrayList<CurrencyModal> currencyModalArrayList; //"declaring"/ creating an arraylist that takes data only from modal class/object
     private CurrencyRVAdapter currencyRVAdapter;
     private ProgressBar loadingPB;
 
@@ -55,27 +55,33 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        searchEdt = findViewById(R.id.idEdtCurrency);
+        searchEdt = findViewById(R.id.idEdtCurrency);   //search bar
 
         // initializing all our variables and array list.
         loadingPB = findViewById(R.id.idPBLoading);
         currencyRV = findViewById(R.id.idRVcurrency);
-        currencyModalArrayList = new ArrayList<>();
+        currencyModalArrayList = new ArrayList<>();     //init empty modal array list
 
         // initializing our adapter class.
-        currencyRVAdapter = new CurrencyRVAdapter(currencyModalArrayList, this);
+        //
+        currencyRVAdapter = new CurrencyRVAdapter(currencyModalArrayList, this);    //instantiating adapter object to use in main activity, also passing empty modal list
 
         // setting layout manager to recycler view.
         currencyRV.setLayoutManager(new LinearLayoutManager(this));
 
         // setting adapter to recycler view.
+        //passes RVAdapter object we just created through SetAdapter()
         currencyRV.setAdapter(currencyRVAdapter);
 
-        // calling get data method to get data from API.
+        // calling get data method to get data from API.\
+        //At this point, currencyModalArrayList contains all currencies from CMC api listings
         getData();
+
 
         // on below line we are adding text watcher for our
         // edit text to check the data entered in edittext.
+        //this is a listener that awaits a user to enter test into our search bar
+        //The TextWatcher interface handles the function of detecting a change in text in our search bar for us.
         searchEdt.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -116,14 +122,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //String filter is the "char" s from the TextWatcher listener
     private void filter(String filter) {
+
         // on below line we are creating a new array list
         // for storing our filtered data.
         ArrayList<CurrencyModal> filteredlist = new ArrayList<>();
+
         // running a for loop to search the data from our array list.
+        //I assume 'item' is an iterator
         for (CurrencyModal item : currencyModalArrayList) {
-            // on below line we are getting the item which are
-            // filtered and adding it to filtered list.
+
+            // getname() grabs current currency name being iterated through in ModelArrayList
+            //the string is converted to lowercase, then our 'char' or 'string' called "filter" (user typed in)
+            //is then checked to see if it exists in a item name.
+            //if it is, its added to our new filtered list.
             if (item.getName().toLowerCase().contains(filter.toLowerCase())) {
                 filteredlist.add(item);
             }
