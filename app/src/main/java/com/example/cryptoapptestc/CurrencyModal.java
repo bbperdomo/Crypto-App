@@ -8,12 +8,18 @@ public class CurrencyModal {
     private String symbol;
     private double price;
 
+    //empty constructor for firestore
+    public CurrencyModal() {
+
+    }
+
     public CurrencyModal(String name, String symbol, double price) {
         this.name = name;
         this.symbol = symbol;
         this.price = price;
     }
 
+    //getter and setter methods for all variables
     public String getName() {
         return name;
     }
