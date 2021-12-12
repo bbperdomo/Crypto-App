@@ -1,7 +1,9 @@
 package com.example.cryptoapptestc;
 
 
-public class CurrencyModal {
+import java.io.Serializable;
+
+public class CurrencyModal implements Serializable {
     // variable for currency name,
     // currency symbol and price.
     private String name;
