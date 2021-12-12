@@ -113,6 +113,11 @@ public class MainActivity extends AppCompatActivity {
                         Intent results = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(results);
                         break;
+                    case R.id.action_fav:
+                        Intent fav = new Intent(getApplicationContext(), Favorites.class);
+                        startActivity(fav);
+                        break;
+
 
                 }
                 return true;
