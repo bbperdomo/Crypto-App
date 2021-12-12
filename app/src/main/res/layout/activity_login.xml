@@ -6,7 +6,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".login">
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="99dp"
+        android:layout_marginBottom="50dp"
+        android:text="Welcome!"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please login or sign up below"
+        android:textSize="15dp" />
+
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
@@ -39,6 +55,8 @@
         android:layout_marginLeft="4pt"
         android:layout_marginTop="10pt"
         android:text="SIGN UP"/>
+
+
 
 
 </LinearLayout>
