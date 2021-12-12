@@ -68,7 +68,7 @@
             android:layout_marginLeft="2dp"
             android:layout_marginEnd="0dp"
             android:layout_marginRight="0dp"
-            android:text="Button"
+            android:text="Favorite"
             android:icon="@drawable/ic_search" />
 
     </RelativeLayout>
