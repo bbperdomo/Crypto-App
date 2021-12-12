@@ -61,12 +61,12 @@ public class Favorites extends AppCompatActivity implements Serializable{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.currency_rv_item);
 
-        Bundle bundle = getIntent().getExtras();
-        String jsonString = bundle.getString("KEY");
-        Gson gson = new Gson();
-        Type listOfCurrencyType = new TypeToken<List<CurrencyModal>>() {}.getType();
-        ArrayList<CurrencyModal> modals = gson.fromJson(jsonString, listOfCurrencyType);
-        System.out.println(modals);
+//        Bundle bundle = getIntent().getExtras();
+//        String jsonString = bundle.getString("KEY");
+//        Gson gson = new Gson();
+//        Type listOfCurrencyType = new TypeToken<List<CurrencyModal>>() {}.getType();
+//        ArrayList<CurrencyModal> modals = gson.fromJson(jsonString, listOfCurrencyType);
+//        System.out.println(modals);
 
         //getIncomingIntent();
     }
