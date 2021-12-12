@@ -63,11 +63,10 @@ public class MainActivity extends AppCompatActivity {
         currencyModalArrayList = new ArrayList<>();     //init empty modal array list
 
         // initializing our adapter class.
-        //
         currencyRVAdapter = new CurrencyRVAdapter(currencyModalArrayList, this);    //instantiating adapter object to use in main activity, also passing empty modal list
 
         // setting layout manager to recycler view.
-        currencyRV.setLayoutManager(new LinearLayoutManager(this));
+        currencyRV.setLayoutManager(new LinearLayoutManager(this)); //scrolls up and down, one direction
 
         // setting adapter to recycler view.
         //passes RVAdapter object we just created through SetAdapter()
@@ -160,6 +159,8 @@ public class MainActivity extends AppCompatActivity {
         RequestQueue queue = Volley.newRequestQueue(this);
         // making a json object request to fetch data from API.
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+            //Intent intent = new Intent(MainActivity.this, Favorites.class); //idk
+
             @Override
             public void onResponse(JSONObject response) {
                 // inside on response method extracting data
@@ -182,6 +183,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                     // notifying adapter on data change.
                     currencyRVAdapter.notifyDataSetChanged();
+                    
+
                 } catch (JSONException e) {
                     // handling json exception.
                     e.printStackTrace();
@@ -209,6 +212,8 @@ public class MainActivity extends AppCompatActivity {
         // json object request to our queue.
         queue.add(jsonObjectRequest);
     }
+
+
 
 
 
