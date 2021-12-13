@@ -27,6 +27,7 @@ The functionality of this app is pretty brief, but serves as a testbed for which
 Here are some screenshots of CryptoApp at work:
 
 ![image](https://user-images.githubusercontent.com/77758553/145735908-219d1436-7d9b-4a40-8c5a-c69789fc979e.png)
+
 Here's my landing page, where users can register and login
 
 
@@ -35,6 +36,12 @@ Here's my landing page, where users can register and login
 
 In the search activity, users can lookup their favorite cryptocurrencies prices, names, and tickers
 
+
+
+### WORK IN PROGRESS
+![image](https://user-images.githubusercontent.com/77758553/145736054-42e0f647-b5b2-4130-bfa1-faf1b66067ce.png)
+
+Ideally, users will be able to save a list of currencies here, and view their prices easily.
 
 
 
