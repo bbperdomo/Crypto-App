@@ -1,2 +1,36 @@
 # Crypto-App
-Final Project for Mobile App Projects COP 4655
+## Final Project for Mobile App Projects COP 4655
+
+### Description
+Hello, welcome to my rough draft of CryptoApp (original, i know). It runs on android mobile devices, and is written in Java. You can use my application to browse coinmarket api's top listings, and search for crypto price quotes, names, and symbols. Additonally, you can create a user account with firebase login, or login using your google account. Additionally, you will be able to save your favorite currencies to your account, and view them at your leisure.
+
+
+
+### Requirements
+There are several ways to run CryptoApp, but I've made it easy but distributing my application through firebase. I've created a link: https://appdistribution.firebase.dev/i/e5480f609288dbad
+
+specially made for those who view this project on GitHub. All you will need is a android mobile device, emulator, and a google account.
+
+### Main Functionality
+The functionality of this app is pretty brief, but serves as a testbed for which I plan to add on additional features. Currently, the main features available in CryptoApp are:
+
+-Consumes Coinmarketcap's API 
+
+-Search top cryptocurrency prices, names, and tickers
+
+-Allow basic user sign-up/sign-in, using firebase and Google
+
+
+
+
+### Testing
+Here are some screenshots of CryptoApp at work:
+
+![image](https://user-images.githubusercontent.com/77758553/145735908-219d1436-7d9b-4a40-8c5a-c69789fc979e.png)
+Here's my landing page, where users can register and login
+
+
+
+
+
+
