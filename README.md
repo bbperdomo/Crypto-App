@@ -27,6 +27,7 @@ The functionality of this app is pretty brief, but serves as a testbed for which
 Here are some screenshots of CryptoApp at work:
 
 ![image](https://user-images.githubusercontent.com/77758553/145735908-219d1436-7d9b-4a40-8c5a-c69789fc979e.png)
+
 Here's my landing page, where users can register and login
 
 
