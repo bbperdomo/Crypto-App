@@ -2,7 +2,7 @@
 ## Final Project for Mobile App Projects COP 4655
 
 ### Description
-Hello, welcome to my rough draft of "CryptoApp" (original, i know). It runs on android mobile devices, and is written in Java. You can use my application to browse coinmarket api's top listings, and search for crypto price quotes, names, and symbols. , you can create a user account with firebase login, or login using your google account. In the future, you will be able to save your favorite currencies to your account, and view them at your leisure.
+Hello, welcome to my rough draft of "CryptoApp" (original, i know). It runs on android mobile devices, and is written in Java. You can use my application to browse coinmarket api's top listings, and search for crypto price quotes, names, and symbols. Additionally, you can create a user account with firebase login, or login using your google account. In the future, you will be able to save your favorite currencies to your account, and view them at your leisure.
 
 
 
